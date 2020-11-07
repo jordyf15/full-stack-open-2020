@@ -1,5 +1,6 @@
 const errorHandlerMiddleware=(err,req,res,next)=>{
-    console.log(err.name)
+    console.log('masuk error middle ware')
+    console.log(err.name,err.message)
     if(err.name==='ValidationError'){
         return res.status(400).json({error: err.message})
     }

@@ -12,11 +12,11 @@ blogRouter.get('/',async (request, response) => {
 blogRouter.post('/',async (request, response,next) => {
   try{
     let blog = new Blog(request.body)
-
     const decodedToken=jwt.verify(request.token, process.env.SECRET);
     blog.user=decodedToken.id;
-   
+    console.log(decodedToken.id)
     let user=await User.findById(decodedToken.id);
+    console.log(user);
 
     if(!blog.likes){
       blog.likes=0
@@ -49,14 +49,14 @@ blogRouter.delete('/:id',async(req,res,next)=>{
 })
 
 blogRouter.put('/:id',async(req,res,next)=>{
-  if(isNaN(req.body.likes)===false){
+  // if(isNaN(req.body.likes)===false){
     const updatedBlog=await Blog.findById(req.params.id)
-    updatedBlog.likes=req.body.likes;
+    updatedBlog.likes+=1;
     const result= await updatedBlog.save();
     res.status(200).json(result)
-  }else{
-    res.status(404).json({error: 'likes must be number'})
-  }
+  // }else{
+  //   res.status(404).json({error: 'likes must be number'})
+  // }
 })
  
 

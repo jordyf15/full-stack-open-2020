@@ -21,27 +21,43 @@ const App=()=>{
       name: newName,
       number: newNumber
     }
+    console.log(persons)
     persons.forEach((person)=>{
       if(person.name===newPerson.name){
         exist=true;
       }
     })
     if(exist===true){
+      console.log(persons)
       let updateContact=persons.filter((person)=>{
         return person.name.toLowerCase()===newPerson.name.toLowerCase();
-      })
+      })//suspected for changing the persons state because its a reference?
       updateContact=updateContact[0];
       if(window.confirm(`${updateContact.name} is already added to phonebook, replace the old number with
       the new one?`)){
+        console.log(persons)
         updateContact.number=newPerson.number;
         contactServices.update(updateContact)
         .then((updatedPerson)=>{
+          console.log(persons)
+          console.log(updatedPerson)
+          if(updatedPerson.name){
+            console.log('valid')
         setPersons(persons.map((person)=>person.id===updatedPerson.id?updatedPerson:person))
           setColorNotif(true);
         setNotifMessage(`changed ${updatedPerson.name}`)
         setTimeout(() => {
           setNotifMessage(null);
         }, 5000);
+        }else{
+          console.log('not valid');
+          console.log(persons)
+          setColorNotif(false);
+          setNotifMessage(updatedPerson);
+          setTimeout(() => {
+            setNotifMessage(null);
+          }, 5000);
+        }
       })
       .catch(()=>{
         setColorNotif(false);
@@ -51,11 +67,26 @@ const App=()=>{
     }else{
       contactServices.create(newPerson)
       .then((addedPerson)=>{
+        if(addedPerson.name){
+        console.log('masuk ke then')
         setPersons(persons.concat(addedPerson));
         setNewName('');
         setNewNumber('');
         setColorNotif(true);
         setNotifMessage(`added ${addedPerson.name}`)
+        setTimeout(() => {
+          setNotifMessage(null);
+        }, 5000);
+      }else{
+        throw addedPerson
+      }
+      })
+      .catch((err)=>{
+        console.log('masuk errornya',err);
+        setNewName('');
+        setNewNumber('');
+        setColorNotif(false);
+        setNotifMessage(err);
         setTimeout(() => {
           setNotifMessage(null);
         }, 5000);
@@ -66,12 +97,12 @@ const App=()=>{
   const deleteContact=(event)=>{
     console.log(event.target.value)
     console.log(persons);
-    const deletedPerson=persons.filter((person)=>person.id===parseInt(event.target.value))[0].name;
+    const deletedPerson=persons.filter((person)=>person.id===event.target.value)[0].name;
     if(window.confirm(`Delete ${deletedPerson}`)){
       contactServices.del(event.target.value)
       .then(()=>{
         setPersons(persons.filter((person)=>{
-          return person.id!==parseInt(event.target.value);
+          return person.id!==event.target.value;
         }))
       })
     }
@@ -90,7 +121,9 @@ const App=()=>{
   }
 
   React.useEffect(()=>{
-    setShowPersons(persons.filter((person)=>{return person.name.toLowerCase().includes(filter.toLowerCase())}));
+    console.log(persons)
+    setShowPersons(persons.filter((person)=>{
+      return person.name.toLowerCase().includes(filter.toLowerCase())}));
   },[filter,persons])
 
   React.useEffect(()=>{

@@ -15,3 +15,7 @@ part4/node_modules
 part4/.env
 
 part5/node_modules
+
+part6/unicafe-redux/node_modules
+
+part6/anecdote-redux/node_modules

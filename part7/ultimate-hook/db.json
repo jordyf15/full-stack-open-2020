@@ -1,0 +1,45 @@
+{
+  "notes": [
+    {
+      "content": "custom-hookit aivan mahtavia",
+      "id": 1
+    },
+    {
+      "content": "paras feature ikinä <3",
+      "id": 2
+    },
+    {
+      "content": "asdasd",
+      "id": 3
+    },
+    {
+      "content": "qweqwe",
+      "id": 4
+    },
+    {
+      "content": "kono dio da",
+      "id": 5
+    },
+    {
+      "content": "tes note",
+      "id": 6
+    }
+  ],
+  "persons": [
+    {
+      "name": "mluukkai",
+      "number": "040-5483923",
+      "id": 1
+    },
+    {
+      "name": "shuwa shuwa",
+      "number": "123-1231231",
+      "id": 2
+    },
+    {
+      "name": "test name",
+      "number": "123123123",
+      "id": 3
+    }
+  ]
+}

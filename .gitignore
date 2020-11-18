@@ -19,3 +19,15 @@ part5/node_modules
 part6/unicafe-redux/node_modules
 
 part6/anecdote-redux/node_modules
+
+part7/routed-anecdotes/node_modules
+
+part7/country-hook/node_modules
+
+part7/ultimate-hook/node_modules
+
+part7/extended-bloglist/blog-frontend/node_modules
+
+part7/extended-bloglist/blog-backend/node_modules
+
+part7/extended-bloglist/blog-backend/.env

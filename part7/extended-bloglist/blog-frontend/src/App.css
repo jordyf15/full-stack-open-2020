@@ -1,0 +1,72 @@
+
+  body{
+    background-color:#d1ccc0;
+  }
+  .container{
+    background-color: #f7f1e3;
+    height: 100vh;
+    border: 10px solid #aaa69d;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .content{
+    padding: 0px 15px 0px 15px;
+  }
+  .notification{
+    background-color: gray;
+    padding: 10px 0px 10px 10px;
+    font-size: 24px;
+  }
+  #success{
+    border: 3px solid green;
+    color: green;
+  }
+  #fail{
+    border: 3px solid red;
+    color: red;
+  }
+  .blogStyle{
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    padding-top: 10px;
+    padding-left:2px;
+    text-align: center;
+    border: 2px solid royalblue;
+    margin-bottom: 15px;
+  }
+  #nav{
+    display: block;
+    background-color: #aaa69d;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    width: 100%;
+  }
+  #title{
+    text-align: center;
+    color: royalblue;
+  }
+  #comment-list{
+    border: 5px solid #aaa69d;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  #footer{
+    border: 5px solid #aaa69d;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: fixed;
+    bottom: 0px;
+    width: 82%;
+    text-align: center;
+  }
+  #footer button{
+    border: none;
+    background-color: transparent;
+  }

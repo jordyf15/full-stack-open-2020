@@ -100,9 +100,9 @@ const App = ()=>{
         <LoginForm handleLogin={handleLogin} username={username} setUsername={setUsername} 
         password={password} setPassword={setPassword}/>
         <div id='footer'>Created by Jordy Ferdian  
-        <button onClick={()=>{window.location.href('https://github.com/jordyf15')}} className="fa fa-github fa-lg"></button>
-        <button onClick={()=>window.location.href='https://www.linkedin.com/in/jordy-ferdian-3606041a7'} className="fa fa-linkedin-square fa-lg"></button><br/>
-      </div>
+          <button onClick={()=>{window.location.href('https://github.com/jordyf15')}} className="fa fa-github fa-lg"></button>
+          <button onClick={()=>window.location.href='https://www.linkedin.com/in/jordy-ferdian-3606041a7'} className="fa fa-linkedin-square fa-lg"></button><br/>
+        </div>
       </div>
     )
   }

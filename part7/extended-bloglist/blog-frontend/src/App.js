@@ -100,21 +100,25 @@ const App = ()=>{
         <LoginForm handleLogin={handleLogin} username={username} setUsername={setUsername} 
         password={password} setPassword={setPassword}/>
         <div id='footer'>Created by Jordy Ferdian  
-        <button onClick={()=>{window.location.href('https://github.com/jordyf15')}} className="fa fa-github fa-lg"></button>
-        <button onClick={()=>window.location.href='https://www.linkedin.com/in/jordy-ferdian-3606041a7'} className="fa fa-linkedin-square fa-lg"></button><br/>
-      </div>
+          <button onClick={()=>{window.location.href('https://github.com/jordyf15')}} className="fa fa-github fa-lg"></button>
+          <button onClick={()=>window.location.href='https://www.linkedin.com/in/jordy-ferdian-3606041a7'} className="fa fa-linkedin-square fa-lg"></button><br/>
+        </div>
       </div>
     )
   }
 
   return (
     <div className='container'>
+      <header>
        <h2 id='title'>Blogs</h2>
-          {notifMessage!==null
-            ?<div id={notifMessage.style} className='notification'>{notifMessage.message}</div>
-            :<></>}
-          <p id="nav"><Link to='/'><b>blogs</b></Link>&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/users'><b>users</b></Link> &nbsp;&nbsp;&nbsp;&nbsp;
+       </header>
+          
+          <nav><p id="nav"><Link to='/'><b>blogs</b></Link>&nbsp;&nbsp;&nbsp;&nbsp;<Link to='/users'><b>users</b></Link> &nbsp;&nbsp;&nbsp;&nbsp;
              {user.name} logged in username: {user.username} <Button id="logout-button" onClick={handleLogout}>logout</Button></p>
+          </nav>
+          {notifMessage!==null
+          ?<div id={notifMessage.style} className='notification'>{notifMessage.message}</div>
+          :<></>}
     <Switch>
       <Route path='/blogs/:id'>
         <Blog blog={indivBlog} handleDeleteBlog={handleDeleteBlog} handleLikeBlog={handleLikeBlog} 
@@ -135,10 +139,10 @@ const App = ()=>{
           )}
       </Route>
     </Switch>
-      <div id='footer'>Created by Jordy Ferdian  
+      <footer>Created by Jordy Ferdian  
         <button onClick={()=>{window.location.href='https://github.com/jordyf15'}} className="fa fa-github fa-lg"></button>
         <button onClick={()=>window.location.href='https://www.linkedin.com/in/jordy-ferdian-3606041a7'} className="fa fa-linkedin-square fa-lg"></button><br/>
-      </div>
+      </footer>
     </div>
   )
 }

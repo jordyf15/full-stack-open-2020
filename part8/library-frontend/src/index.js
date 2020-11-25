@@ -9,6 +9,7 @@ import {getMainDefinition} from '@apollo/client/utilities';
 import {WebSocketLink} from '@apollo/client/link/ws';
 const authLink =setContext((_,{headers})=>{
     const token = localStorage.getItem('userToken');
+    // console.log('set context token',token)
     return{
         headers:{
             ...headers,

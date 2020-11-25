@@ -63,8 +63,8 @@ mutation login($username: String!, $password: String!){
 `
 
 export const USERME=gql`
-query{
-    me{
+query me($token: String){
+    me(token: $token){
         username
         favoriteGenre
     }

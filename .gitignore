@@ -31,3 +31,7 @@ part7/extended-bloglist/blog-frontend/node_modules
 part7/extended-bloglist/blog-backend/node_modules
 
 part7/extended-bloglist/blog-backend/.env
+
+part8/small-library/node_modules
+
+part8/library-frontend/node_modules

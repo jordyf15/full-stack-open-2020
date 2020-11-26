@@ -3,11 +3,10 @@ import {useQuery,useLazyQuery} from '@apollo/client';
 import {USERME,RECOMMEND_BOOK} from '../queries';
 
 const Recommendation=({show,setUser,token})=>{
-    const getUser=useQuery(USERME)
+    const getUser=useQuery(USERME,{variables:{token: token}})
     const [getBooks,books]=useLazyQuery(RECOMMEND_BOOK);
     useEffect(()=>{
       if(getUser.data && token){
-        console.log(getUser.data)
         if(getUser.data.me){
           getBooks({variables: {genre:[getUser.data.me.favoriteGenre]}})
           setUser(getUser.data.me.favoriteGenre)

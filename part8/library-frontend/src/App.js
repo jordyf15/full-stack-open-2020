@@ -25,12 +25,9 @@ const App = () => {
 
   const updateCacheWith=(addedBook)=>{
     const includedIn=(set,object)=>set.map(book=>book.title).includes(object.title)
-    
-    console.log('updatecache',addedBook)
 
     const dataInStore=client.readQuery({query: ALL_BOOKS})
-    console.log('datainstore',dataInStore)
-    console.log(includedIn(dataInStore.allBooks,addedBook))
+  
     if(!includedIn(dataInStore.allBooks,addedBook)){
       client.writeQuery({
         query: ALL_BOOKS,

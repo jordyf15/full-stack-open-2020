@@ -12,7 +12,12 @@ In this section we will learn how to test our frontend or react apps with jest a
 In this section we will learn how to do E2E testing using cypress which is a testing method which test the application as a whole both front end and back end also throught the same interface as real users use.
 
 ## Live Demo on Repl
-https://full-stack-open-2020-part5.jordyf15.repl.co/
+https://full-stack-open-2020-part5.jordyf15.repl.co/  
+  
+Note:  
+In the exercises, there is no request to make a create user functionality. Please use the already created user which details are provided below:  
+username: jordyf15  
+password: jordy123
 
 ## Technologies Used
 1. React version ^16.12.0

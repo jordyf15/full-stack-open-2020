@@ -4,6 +4,11 @@ This application will be developed through exercises 7.9-7.21. This is the same 
 ## Live Demo on Repl
 https://fullstackopen2020-extended-bloglist.jordyf15.repl.co/
 
+Note:  
+In the exercises, there is no request to make a create user functionality. Please use the already created user which details are provided below:  
+username: jordyf15  
+password: jordy123
+
 ## Technologies Used
 1. Axios version 0.21.0
 2. Prop-types version 15.7.2

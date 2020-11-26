@@ -34,7 +34,7 @@ password: nepnep
 10. mongoose-unique-validator version ^2.0.3
 
 ## Exercises Development
-**Exercises 8.1-8.7 (Backend)**
+### Exercises 8.1-8.7 (Backend)
 1. Exercise 8.1 or Step 1:  
 In step 1 we can use [this](https://github.com/fullstack-hy2020/misc/blob/master/library-backend.js) as a starting point for our project. First we will implement queries for bookCount and authorCount which will return the number of books and number of authors.
 2. Exercise 8.2 or Step 2:  
@@ -49,7 +49,8 @@ In step 5 we have to modify the allBooks query so that user can give an optional
 In step 6 we have to implement a addBook mutation which will saved a book to the server. If the author never existed before in the server than it will be automatically added.
 7. Exercise 8.7 or Step 7:  
 In step 7 we have to implement a editAuthor mutation which can be used to change the birth year of an author.  
-**Exercises 8.8-8.12 (Frontend)**  
+
+### Exercises 8.8-8.12 (Frontend)  
 
 8. Exercise 8.8 or Step 8:  
 In step 8 we can use [this](https://github.com/fullstack-hy2020/library-frontend) as a starting point for our front end. Here we need to implement an Authors view to show the details of all authors.
@@ -61,7 +62,8 @@ In step 10 we have to implement a functionality to add new books to our applicat
 In step 11 we have to implement a functionality to set birth year of an author and also make sure that the Authors view are updated when the birth year are set.
 12. Exercise 8.12 or Step 12:  
 In step 12 we have to alter the birth year form so that a birth year can be set only for an existing author.  
-**Exercises 8.13-8.16 (Backend)**  
+
+### Exercises 8.13-8.16 (Backend)  
 
 13. Exercise 8.13 or Step 13:  
 In step 13 we have to change our application so that it get and saved the data to the database.
@@ -71,7 +73,8 @@ In step 14 we have to fix all of the queries and mutations so that it work again
 In step 15 we have to implement error handling for database validation so that it throws an UserInputError with a suitable error message when an error happened.
 16. Exercise 8.16 or Step 16:  
 In step 16 we have to add user management to the application by expanding our schema, create resolvers for query me and resolvers for mutation createUser and login. And also make the mutations addBook and editAuthor possible only if the request includes a valid token.  
-**Exercises 8.17-8.22 (Frontend)**  
+
+### Exercises 8.17-8.22 (Frontend)  
 
 17. Exercise 8.17 or Step 17:  
 In step 17 we have to fix the list of all books which was broken due to changes in the backend.
@@ -85,7 +88,8 @@ In step 20 we have to implement a view which shows all the books based on the lo
 In step 21 we have to alter the filter books in recommendation page using a query (if in step 20 we use react) to the server.
 22. Exercise 8.22 or Step 22:  
 In step 22 we have to ensure that the book recommendation view is updated if a new book is added.  
-**Exercises 8.23-8.26 (Frontend & Backend)**  
+
+### Exercises 8.23-8.26 (Frontend & Backend)  
 
 23. Exercise 8.23 or Step 23:  
 In step 23 we have to implement a subscription book added in the backend, which returns the details of all new books to its subscribers.  

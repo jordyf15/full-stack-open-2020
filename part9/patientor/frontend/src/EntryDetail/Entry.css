@@ -1,0 +1,15 @@
+.entries{
+    border: 1px solid grey;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top:15px;
+}
+#entryFormOptionContainer{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 30px;
+   margin-left: 45%;
+}
+#entryTypeOption{
+    margin-bottom: 30px;
+}

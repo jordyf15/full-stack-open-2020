@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+# CourseInfo-Typescript
+This application will be developed in exercises 9.14-9.15. It is similar to the course info application developed in the previous courses but with typescript this time.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo on Repl
+https://FullStackOpen2020-CourseInfo-Typescript.jordyf15.repl.co
 
-## Available Scripts
+## Technologies Used
+1. React version ^17.0.1
+2. React-dom version ^17.0.1
+3. React-scripts version 4.0.1
+4. Typescript version ^4.1.2
+5. @types/react version ^16.14.2
+6. @types/react-dom version ^16.9.10
 
-In the project directory, you can run:
+## Application Usage
+There is no usage for this application, since it only displayed hard coded values based on the exercises.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Exercises Development
+1. Exercises 9.14 or Step 1:  
+In step 1 we have to create a new react app with typescript and set up eslint for the project just like shown in the material. Using the codebase in the exercise the whole app is in one components, so we have to refactor the app so that it consists of three components: Header, Content and Total. All data is still kept in the App component, which passes all necessary data to each component as props.
+2. Exercises 9.15 or Step 2:  
+In step 2 we the data about courseParts have been altered, so we have to create interfaces that could support all the changes that happended to the data.

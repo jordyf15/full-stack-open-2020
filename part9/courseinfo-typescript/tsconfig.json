@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "outDir": "./compiledBuild/",
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",

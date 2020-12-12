@@ -1,4 +1,6 @@
 # Part 7
+In this part we will learn about react router which helps us divide the application into different views that are shown based on the URL in the browser's address bar, styling react app with UI frameworks, hooks functions and how to create a custom hook, and learn about webpacks and how to configure the application ourselves.  
+  
 Part 7 consist of 6 sections: 
 1. React Router:  
 In this section we will learn how to make our single page apps to have an illusion of different 'pages' even though in reality it's only one page. With react-router-dom we will learn to render different views based on the url in the browser.

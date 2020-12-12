@@ -1,4 +1,6 @@
 # Part 2
+In this part we will learn more about react where we learn how to render a data collection to the screen, how to submit data to a React application using HTML forms and how the browser can fetch and handle data stored in a remote backend server. We will also learn how to add css styles to our React application.  
+  
 Part 2 consist of 5 sections:  
 1. Rendering Collections, modules:  
 In this section we will learn how to render arbitary numbers of collection or data using the map method, and also how to break our application's code into several files or modules to make it eazier to develop.

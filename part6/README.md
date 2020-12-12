@@ -1,4 +1,6 @@
 # Part 6
+In this part we will learn about the Redux-library, which is currently the most popular solution for managing the state of React-applications.  
+  
 Part 6 consist of 4 sections:  
 1. Flux-architecture and Redux:  
 In this section we will learn about the flux architecture where the states is seperated completely from the React-components into its own stores this was to make stage management easier. In this section we will learn and use redux which works with the same principle with flux but is a bit simpler. We will also learn about reducers and action creators.

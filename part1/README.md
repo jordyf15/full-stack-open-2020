@@ -1,4 +1,6 @@
 # Part 1
+In this part we will learn about the React-library and also some feature of Javascript that are important for understanding React.  
+  
 Part 1 consist of 4 sections:  
 1. Introduction to react:  
 In this section we will learn about component in react and also passing data to components with props.

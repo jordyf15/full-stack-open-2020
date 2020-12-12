@@ -1,4 +1,6 @@
 # Full-Stack-Open 2020 PART 0
+In this part we will have an overview of the basics of web development and also about the advances in web application development during the last few decades.  
+  
 Part 0 consist of 2 section:
 1. General info:
 This contain information about the full-stack-open 2020 course itself, including how to submit the exercises and other related information of the course.
